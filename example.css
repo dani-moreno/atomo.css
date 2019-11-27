@@ -62,6 +62,7 @@ code {
   background: var(--color-grey-l1);
   margin-bottom: var(--space-xs);
   border-radius: 1px;
+  position: relative;
 }
 
 .block.space-2xs { width: var(--space-2xs); }
@@ -73,12 +74,20 @@ code {
 .block.space-3xl { width: var(--space-3xl); }
 .block.space-4xl { width: var(--space-4xl); }
 
+.block span {
+  position:absolute;
+  top:0;
+  right:0;
+  background:none;
+  width:100px;
+  margin-right:-100px;
+}
+
 .color {
   width: var(--space-l);
   height: var(--space-l);
   display: inline-block;
   border-radius: 4px;
-  margin-right: var(--space-s);
   box-shadow: 0 0 0 2px var(--color-grey-l2);
 }
 
@@ -86,7 +95,6 @@ code {
   width: var(--space-l);
   height: var(--space-l);
   display: inline-block;
-  margin-right: var(--space-s);
   text-align: center;
   font-weight: 700;
 }
@@ -96,4 +104,5 @@ span {
   color: var(--color-grey-d2);
   padding: var(--space-2xs) var(--space-xs);
   border-radius: 1px;
+  white-space: nowrap;
 }
