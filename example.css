@@ -1,0 +1,99 @@
+/* -- Example page -- */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,html {
+  font-family: var(--font);
+  font-size: var(--font-size);
+  line-height: var(--space);
+  color: var(--color-grey-d3);
+  background: var(--color-grey-l3);
+}
+
+main,footer {
+  width:100%;
+  max-width:960px;
+  margin:0 auto;
+  padding:var(--space-l);
+}
+
+a {
+  color: #748ffc;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a.button {
+  color: #fff;
+  background: #748ffc;
+  padding:var(--space-xs) var(--space-s);
+  border-radius:2px;
+  box-shadow: 0 1px 4px rgba(0,0,0,.1);
+  display:inline-block;
+  transition: box-shadow,transform .2s ease;
+}
+
+a.button:hover {
+  box-shadow: 0 2px 6px rgba(0,0,0,.15),
+    0 4px 12px rgba(0,0,0,.025);
+  transform: translate(0, -1px);
+}
+
+footer { color: var(--color-grey-d2); }
+
+h1,h2,h3,h4,h5,h6 { font-weight: 400; }
+
+code {
+  word-wrap: break-word;
+  padding: var(--space);
+  background: var(--color-grey-l2);
+  margin:var(--space) 0;
+  display: block;
+  border-radius: 2px;
+}
+
+.block {
+  width: var(--space);
+  height :var(--space);
+  background: var(--color-grey-l1);
+  margin-bottom: var(--space-xs);
+  border-radius: 1px;
+}
+
+.block.space-2xs { width: var(--space-2xs); }
+.block.space-xs  { width: var(--space-xs);  }
+.block.space-s   { width: var(--space-s);   }
+.block.space-l   { width: var(--space-l);   }
+.block.space-xl  { width: var(--space-xl);  }
+.block.space-2xl { width: var(--space-2xl); }
+.block.space-3xl { width: var(--space-3xl); }
+.block.space-4xl { width: var(--space-4xl); }
+
+.color {
+  width: var(--space-l);
+  height: var(--space-l);
+  display: inline-block;
+  border-radius: 4px;
+  margin-right: var(--space-s);
+  box-shadow: 0 0 0 2px var(--color-grey-l2);
+}
+
+.color-text {
+  width: var(--space-l);
+  height: var(--space-l);
+  display: inline-block;
+  margin-right: var(--space-s);
+  text-align: center;
+  font-weight: 700;
+}
+
+span {
+  background: var(--color-grey-l2);
+  color: var(--color-grey-d2);
+  padding: var(--space-2xs) var(--space-xs);
+  border-radius: 1px;
+}
